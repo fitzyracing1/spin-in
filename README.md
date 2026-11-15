@@ -18,3 +18,19 @@ gh auth login
 gh repo clone fitzyracing1/spin-in ~/spin-in
 cd ~/spin-in && python spin.py
 ```
+
+## Termux time commands (2038-safe)
+
+A signed 32-bit seconds counter runs out on 2038-01-19 03:14:07 UTC and wraps negative. These commands do their time math in Python's unlimited-size integers through the timer bot, so they never wrap.
+
+```sh
+cd ~/spin-in && bash termux/install.sh
+spin-sleep 5s          # sleeps 5 seconds on a monotonic clock
+spin-secs 2 min        # 120.0
+spin-date              # now, in UTC
+spin-after 1 hour      # UTC time one hour from now
+spin-at 2147483648     # 2038-01-19T03:14:08+00:00, one past the 32-bit limit
+spin-check 2147483648  # says whether a 32-bit counter would wrap
+```
+
+They work anywhere with `python timecmd.py <command>` too. They don't change the phone's system clock or fix other apps; they give you commands that can't hit the limit.
