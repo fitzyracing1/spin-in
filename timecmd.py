@@ -6,6 +6,8 @@
   python timecmd.py after 5s          UTC time 5 seconds from now
   python timecmd.py at 2147483648     epoch seconds to UTC (one past the 2038 limit)
   python timecmd.py check 2147483648  does it overflow a 32-bit counter?
+
+spin-in by Joshua Almeida (MIT). Sponsor: https://github.com/sponsors/fitzyracing1
 """
 import sys
 from bots import time2038 as t
