@@ -7,7 +7,8 @@ class RuleBot(Bot):
     RULES = {
         "hello": "Hi Joshua.",
         "status": "All bots up.",
-        "help": "Try: 5s, 2 min, 2+3*4, hello, status",
+        "help": "Try: 5s, 2 min, 2+3*4, hello, status, sponsor",
+        "sponsor": "Thanks! https://github.com/sponsors/fitzyracing1",
     }
 
     def handle(self, text):

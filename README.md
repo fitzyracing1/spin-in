@@ -1,5 +1,9 @@
 # spin-in
 
+[![Sponsor](https://img.shields.io/badge/Sponsor-fitzyracing1-ea4aaa?logo=githubsponsors)](https://github.com/sponsors/fitzyracing1)
+[![test](https://github.com/fitzyracing1/spin-in/actions/workflows/test.yml/badge.svg)](https://github.com/fitzyracing1/spin-in/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Plain bots instead of AI. Each bot is a few lines of rules and code: same input, same answer, no API, no cost, works offline.
 
 `spin.py` asks each bot in turn and the first one that knows the answer replies.
@@ -61,3 +65,23 @@ spin-check 2147483648  # says whether a 32-bit counter would wrap
 ```
 
 They work anywhere with `python timecmd.py <command>` too. They don't change the phone's system clock or fix other apps; they give you commands that can't hit the limit.
+
+## Support this project
+
+spin-in is free and MIT licensed. If it saves you time, please [sponsor me on GitHub](https://github.com/sponsors/fitzyracing1). It keeps the bots coming.
+
+| Plan | Price | What you get |
+| --- | --- | --- |
+| Free | $0 | Everything in this repo, forever |
+| Pro | $49/month | Priority issues and help adding your own bots |
+| Team | $199/month | Custom bots built for your team, plus Pro |
+
+Plans are paid through [GitHub Sponsors](https://github.com/sponsors/fitzyracing1). You can also star the repo, share it, or open an issue with a bot idea.
+
+## Author
+
+Built by Joshua Almeida ([@fitzyracing1](https://x.com/fitzyracing1), [fitzyracing1.com](https://fitzyracing1.com), [GitHub](https://github.com/fitzyracing1)).
+
+## License
+
+[MIT](LICENSE) © 2026 Joshua Almeida

@@ -19,7 +19,8 @@ def main():
     if len(sys.argv) > 1:
         print(*spin(" ".join(sys.argv[1:])))
         return
-    print("spin-in. Type 'help', or Ctrl-D to quit.")
+    print("spin-in by Joshua Almeida. Type 'help', or Ctrl-D to quit.")
+    print("Like it? Sponsor: https://github.com/sponsors/fitzyracing1")
     for line in sys.stdin:
         print(*spin(line))
 
